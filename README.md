@@ -6,8 +6,6 @@
 
 A modern, responsive portfolio website built with React, featuring interactive 3D elements, smooth animations, and dark mode support.
 
-![Portfolio Preview](screenshot.png)
-
 ## ✨ Features
 
 - **Interactive 3D Hero Section** - Engaging 3D model visualization using Three.js
