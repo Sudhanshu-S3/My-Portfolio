@@ -1,0 +1,35 @@
+.experience-section {
+  background-color: var(--light-bg);
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--accent-color)
+  );
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.education-title {
+  margin-top: 4rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 31px;
+  }
+}

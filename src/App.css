@@ -1,0 +1,278 @@
+:root {
+  --primary-color: #0070f3;
+  --secondary-color: #1a202c;
+  --accent-color: #00c896;
+  --text-color: #333;
+  --light-text: #f9f9f9;
+  --light-bg: #f5f8fa;
+  --dark-bg: #111827;
+  --gray-bg: #edf2f7;
+  --border-color: #e2e8f0;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Dark mode variables */
+.dark-mode {
+  --primary-color: #60a5fa; /* Lighter blue for dark mode */
+  --secondary-color: #f0f0f0;
+  --accent-color: #10b981; /* Slightly adjusted green */
+  --text-color: #e2e8f0;
+  --light-text: #f9f9f9;
+  --light-bg: #1f2937; /* Slightly lighter than dark-bg for contrast */
+  --dark-bg: #111827;
+  --gray-bg: #374151;
+  --border-color: #4b5563;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Roboto, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  line-height: 1.7;
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 5rem;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+ul,
+ol {
+  list-style-position: inside;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #005fcc;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Dark mode classes for future implementation */
+.dark-mode {
+  --text-color: #f9f9f9;
+  --secondary-color: #f0f0f0;
+  --light-bg: #1a202c;
+  --dark-bg: #0f1419;
+  --gray-bg: #2d3748;
+  --border-color: #4a5568;
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+}
+
+.dark-mode .btn-outline {
+  border-color: var(--light-text);
+  color: var(--light-text);
+}
+
+.dark-mode .skill-category,
+.dark-mode .project-card,
+.dark-mode .achievement-card,
+.dark-mode .timeline-content {
+  background-color: #1e293b;
+  color: var(--light-text);
+  box-shadow: var(--shadow-md);
+}
+
+.dark-mode .skill-item {
+  background-color: #374151;
+  color: var(--light-text);
+}
+
+.dark-mode .tech-tag {
+  background-color: #374151;
+  color: var(--light-text);
+}
+
+.dark-mode .project-date,
+.dark-mode .achievement-date {
+  color: #d1d5db;
+}
+
+.dark-mode .timeline-item::after {
+  background: var(--dark-bg);
+  border-color: var(--primary-color);
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: var(--light-text);
+}
+
+.dark-mode input:focus,
+.dark-mode textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2);
+}
+
+.dark-mode .btn-submit:hover {
+  background-color: #3b82f6;
+}
+
+.dark-mode .contact-info {
+  background-color: #1e40af; /* Darker blue for contrast */
+}
+
+/* Modified dark header */
+.dark-mode .header.scrolled {
+  background-color: rgba(17, 24, 39, 0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Add transitions for smooth theme switching */
+body,
+section,
+div,
+input,
+textarea,
+button,
+nav,
+header,
+footer,
+a {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+}
