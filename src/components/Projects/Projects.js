@@ -11,8 +11,8 @@ const Projects = () => {
             description: "Engineered a web application that solves Rubik's cube from user-uploaded images with a custom image processing pipeline, featuring ML-based color detection across different lighting conditions and an interactive 3D cube model.",
             tech: ["MERN Stack", "Image Processing", "JWT Auth", "RESTful API"],
             icon: "fa-cube",
-            githubUrl: "#",
-            demoUrl: "#",
+            githubUrl: "https://github.com/Sudhanshu-S3/Rubiks-client",
+            demoUrl: "https://rubiks-client.vercel.app/",
             date: "March 2025",
             category: "web"
         },
@@ -21,8 +21,8 @@ const Projects = () => {
             description: "Built a full-stack job aggregation platform with parallel web scraping from LinkedIn, Wellfound, and Unstop using Puppeteer, implementing intelligent caching and browser pooling techniques with multiple filtering options and data export capabilities.",
             tech: ["MERN Stack", "Puppeteer", "Web Scraping", "Browser Automation"],
             icon: "fa-briefcase",
-            githubUrl: "#",
-            demoUrl: "#",
+            githubUrl: "https://github.com/Sudhanshu-S3/JobSrcapper-server",
+            demoUrl: "https://sudhanshu-s3.github.io/JobSrcapper-client/",
             date: "January 2025",
             category: "web"
         },
